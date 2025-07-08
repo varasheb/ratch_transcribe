@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS users_meet_logs (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    meet_id INT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
